@@ -1,0 +1,49 @@
+# Unity: generated and cached folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# IDE-generated files
+.vs/
+.idea/
+.vscode/
+*.csproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity / Visual Studio generated files
+*.csproj.user
+*.unityproj
+*.tmp
+*.bak
+*.orig
+*.swp
+*~
+
+# Unity caches / crash files
+sysinfo.txt
+*.stackdump
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Optional: uncomment if you don't want to commit packaged builds
+# *.unitypackage
