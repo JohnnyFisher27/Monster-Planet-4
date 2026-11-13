@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: e0f44104d865b45a69fbeb70026f83d3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7513255018499293487
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_0
+  - first:
+      213: 7686405688555544132
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_1
+  - first:
+      213: -5314694368594268088
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_2
+  - first:
+      213: -1240100822282664594
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_3
+  - first:
+      213: 3125116347199801832
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_4
+  - first:
+      213: -1517875962565463202
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_5
+  - first:
+      213: -1152279714661192680
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_6
+  - first:
+      213: -6155641332804618553
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_7
+  - first:
+      213: -970904938879836164
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_8
+  - first:
+      213: 976968945493650130
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_9
+  - first:
+      213: 3379684786263079548
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_10
+  - first:
+      213: -798274762188998041
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_11
+  - first:
+      213: -8830330397201135573
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_12
+  - first:
+      213: 8499117519296852322
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_13
+  - first:
+      213: -6616429789478513932
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_14
+  - first:
+      213: 5198410538662023605
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_15
+  - first:
+      213: 3994710775955285036
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_16
+  - first:
+      213: 8325716296197704236
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_17
+  - first:
+      213: 6840765337651358007
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_18
+  - first:
+      213: -4282807412188591723
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_19
+  - first:
+      213: 6758453924395323556
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_20
+  - first:
+      213: -4366585537915461808
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_21
+  - first:
+      213: 7536331213434643477
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_22
+  - first:
+      213: -2050136062481553560
+    second: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 390
+        width: 180
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1debd6b1e5e8bb790800000000000000
+      internalID: -7513255018499293487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_1
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 390
+        width: 180
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e15e9df399baa60800000000000000
+      internalID: 7686405688555544132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_2
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 392
+        width: 176
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8407b2651a96e36b0800000000000000
+      internalID: -5314694368594268088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_3
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 390
+        width: 180
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e650c2a5fd64acee0800000000000000
+      internalID: -1240100822282664594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_4
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 392
+        width: 176
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e94c9c92c4ae5b20800000000000000
+      internalID: 3125116347199801832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_5
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 394
+        width: 159
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e537e26aadb6feae0800000000000000
+      internalID: -1517875962565463202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 390
+        width: 119
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c2bbd54b74200f0800000000000000
+      internalID: -1152279714661192680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 391
+        width: 178
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c6f77162d4c29aa0800000000000000
+      internalID: -6155641332804618553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_8
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 199
+        width: 156
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff15672a17a682f0800000000000000
+      internalID: -970904938879836164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_9
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 198
+        width: 180
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2daacb86414ee8d00800000000000000
+      internalID: 976968945493650130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_10
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 200
+        width: 176
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ab002286d07ee20800000000000000
+      internalID: 3379684786263079548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_11
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 199
+        width: 92
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ab09e4555fbe4f0800000000000000
+      internalID: -798274762188998041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_12
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 197
+        width: 182
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b280e71f94d547580800000000000000
+      internalID: -8830330397201135573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_13
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 200
+        width: 174
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261fcf18a5ee2f570800000000000000
+      internalID: 8499117519296852322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 199
+        width: 178
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f212dc6928bd24a0800000000000000
+      internalID: -6616429789478513932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 200
+        width: 176
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b1d891b7d6742840800000000000000
+      internalID: 5198410538662023605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_16
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 7
+        width: 178
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c246d3d2940107730800000000000000
+      internalID: 3994710775955285036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_17
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 8
+        width: 175
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a8b8f1cd2ea8370800000000000000
+      internalID: 8325716296197704236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_18
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 7
+        width: 178
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 739a386a4d74fee50800000000000000
+      internalID: 6840765337651358007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_19
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 7
+        width: 178
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599c61399596094c0800000000000000
+      internalID: -4282807412188591723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_20
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 7
+        width: 178
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a09d62590adacd50800000000000000
+      internalID: 6758453924395323556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_21
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 7
+        width: 177
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05fd033a695c663c0800000000000000
+      internalID: -4366585537915461808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_22
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 7
+        width: 178
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514e5763f4d669860800000000000000
+      internalID: 7536331213434643477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_23
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 7
+        width: 177
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867a19efc147c83e0800000000000000
+      internalID: -2050136062481553560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_0: -7513255018499293487
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_1: 7686405688555544132
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_10: 3379684786263079548
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_11: -798274762188998041
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_12: -8830330397201135573
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_13: 8499117519296852322
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_14: -6616429789478513932
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_15: 5198410538662023605
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_16: 3994710775955285036
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_17: 8325716296197704236
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_18: 6840765337651358007
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_19: -4282807412188591723
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_2: -5314694368594268088
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_20: 6758453924395323556
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_21: -4366585537915461808
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_22: 7536331213434643477
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_23: -2050136062481553560
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_3: -1240100822282664594
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_4: 3125116347199801832
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_5: -1517875962565463202
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_6: -1152279714661192680
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_7: -6155641332804618553
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_8: -970904938879836164
+      topdown_prehistoric_dino_jungle_mega_clean_sample_tilesheet_9: 976968945493650130
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -449,9 +449,9 @@ TextureImporter:
       name: Tileset1xPadding_3
       rect:
         serializedVersion: 2
-        x: 17
+        x: 16
         y: 221
-        width: 18
+        width: 19
         height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1043,9 +1043,9 @@ TextureImporter:
       name: Tileset1xPadding_30
       rect:
         serializedVersion: 2
-        x: 17
+        x: 16
         y: 170
-        width: 18
+        width: 19
         height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
