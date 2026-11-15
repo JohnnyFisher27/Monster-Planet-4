@@ -325,6 +325,11 @@ MonoBehaviour:
   terrainMask:
     serializedVersion: 2
     m_Bits: 64
+  currentChunk: {fileID: 1911396875}
+  spawnedChunks: []
+  latestChunk: {fileID: 0}
+  maxOpDistance: 50
+  optimizerCooldownDuration: 1
 --- !u!4 &940953493
 Transform:
   m_ObjectHideFlags: 0
@@ -355,7 +360,7 @@ GameObject:
   - component: {fileID: 1319117668}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -562,7 +567,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -674,6 +679,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21bcbaabf53190b45a99d8929d167ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
+--- !u!1 &1911396875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9152301832209428197, guid: 7c2735263bd334860a83d977826af83d, type: 3}
+  m_PrefabInstance: {fileID: 4065076906802111799}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4065076906802111799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -722,6 +732,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8206941150141561452, guid: 7c2735263bd334860a83d977826af83d, type: 3}
+      propertyPath: mc
+      value: 
+      objectReference: {fileID: 940953492}
     - target: {fileID: 9152301832209428197, guid: 7c2735263bd334860a83d977826af83d, type: 3}
       propertyPath: m_Name
       value: Terrain Chunk
