@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private InputActionReference moveInput;
     [SerializeField] private InputActionReference menuInput;
 
+    public Vector2 moveDir;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Awake()
@@ -32,6 +34,10 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 input = moveInput.action.ReadValue<Vector2>();
         Vector3 move = input.normalized * speed;
+
+        float moveX = move.x * Time.deltaTime;
+        float moveY = move.y * Time.deltaTime;
+        moveDir = new Vector2(moveX, moveY);
 
         body.linearVelocity = move;
 
