@@ -29,7 +29,7 @@ public class MapController : MonoBehaviour
     void Update()
     {
         ChunkChecker();
-        ChunkOptimizer();
+        //ChunkOptimizer();
     }
 
     void ChunkChecker()
@@ -108,8 +108,9 @@ public class MapController : MonoBehaviour
     void SpawnChunk()
     {
         int rand = Random.Range(0, terrainChunks.Count);
-        latestChunk = Instantiate(terrainChunks[rand], noTerrainPosition, Quaternion.identity);
-        spawnedChunks.Add(latestChunk);
+        Instantiate(terrainChunks[rand], noTerrainPosition, Quaternion.identity);
+        //latestChunk = Instantiate(terrainChunks[rand], noTerrainPosition, Quaternion.identity);
+        //spawnedChunks.Add(latestChunk);
     }
 
     void ChunkOptimizer()
