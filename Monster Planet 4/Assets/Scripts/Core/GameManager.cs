@@ -4,9 +4,10 @@ using UnityEngine;
 public class GameManager
 {
     public GameObject player;
+    public ProjectileManager projectileManager;
+    public CameraController CameraController;
     private static GameManager theInstance;
 
-    public CameraController CameraController;
     public static GameManager Instance { get
         {
             if (theInstance == null)
