@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
 
     private void Shoot()
     {
-        GameManager.Instance.projectileManager.Fire(transform.position, Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - transform.position, stats.attack);
+        GameManager.Instance.projectileManager.Fire(transform.position, Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - transform.position, stats.attack, body.linearVelocity);
     }
 
     private void GameOver()

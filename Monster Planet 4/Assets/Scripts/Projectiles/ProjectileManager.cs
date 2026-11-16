@@ -23,12 +23,13 @@ public class ProjectileManager : MonoBehaviour
         
     }
 
-    public void Fire(Vector2 spawn, Vector2 direction, int dmg)
+    public void Fire(Vector2 spawn, Vector2 direction, int dmg, Vector2 momentum = default(Vector2))
     {
         GameObject projectile = Instantiate(bullet, spawn + direction.normalized, Quaternion.FromToRotation(Vector2.right, direction));
-        Damage traits = projectile.AddComponent<Damage>();
+        ProjectileDamage traits = projectile.AddComponent<ProjectileDamage>();
         traits.damage = dmg;
         traits.direction = (direction).normalized;
+        traits.playerMomentum = momentum;
         StartCoroutine(Expire(projectile));
     }
 
