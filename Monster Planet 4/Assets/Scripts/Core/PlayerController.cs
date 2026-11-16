@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public Action OnMove;
+    public Stats stats;
     private GameObject player;
     private Rigidbody2D body;
     [SerializeField] private float speed = 5.0f;
@@ -12,6 +13,7 @@ public class PlayerController : MonoBehaviour
     //help from example https://docs.unity3d.com/6000.6/Documentation/ScriptReference/CharacterController.Move.html
     [Header("Input Actions")]
     [SerializeField] private InputActionReference moveInput;
+    [SerializeField] private InputActionReference mouseInput;
     [SerializeField] private InputActionReference menuInput;
 
     public Vector2 moveDir;
@@ -27,6 +29,8 @@ public class PlayerController : MonoBehaviour
     {
         player = GameManager.Instance.player;
         body = player.GetComponent<Rigidbody2D>();
+        stats = new Stats(player, 100, 10);
+        stats.OnDeath += GameOver;
     }
 
     // Update is called once per frame
@@ -41,6 +45,9 @@ public class PlayerController : MonoBehaviour
 
         body.linearVelocity = move;
 
+        if (mouseInput.action.triggered)
+            Shoot();
+
         if (input != Vector2.zero)
             OnMove?.Invoke();
 
@@ -48,5 +55,15 @@ public class PlayerController : MonoBehaviour
         //{
         //    MenuManager.Instance.SwitchScene("Main Menu");
         //}
+    }
+
+    private void Shoot()
+    {
+        GameManager.Instance.projectileManager.Fire(transform.position, Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - transform.position, stats.attack);
+    }
+
+    private void GameOver()
+    {
+        //gameover trigger here
     }
 }
