@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     {
         //set gamemanager player model
         GameManager.Instance.player = this.gameObject;
+        GameManager.Instance.playerController = this;
     }
     void Start()
     {
@@ -35,11 +36,25 @@ public class PlayerController : MonoBehaviour
         stats = new Stats(player, 100, 10);
         stats.OnDeath += GameOver;
         animateMe = new PlayerAnimator(_animator);
-        animateMe.Subscribe(this);
     }
 
     // Update is called once per frame
     void Update()
+    {
+        if(GameManager.Instance.state == GameManager.GameState.Play)
+        {
+            move();
+            if (mouseInput.action.triggered)
+                Shoot();
+        }
+
+        //if(menuInput.action.triggered)
+        //{
+        //    MenuManager.Instance.SwitchScene("Main Menu");
+        //}
+    }
+
+    private void move()
     {
         Vector2 input = moveInput.action.ReadValue<Vector2>();
         Vector3 move = input.normalized * speed;
@@ -50,18 +65,9 @@ public class PlayerController : MonoBehaviour
 
         body.linearVelocity = move;
 
-        if (mouseInput.action.triggered)
-            Shoot();
-
         //if (input != Vector2.zero)
-            OnMove?.Invoke(input);
-
-        //if(menuInput.action.triggered)
-        //{
-        //    MenuManager.Instance.SwitchScene("Main Menu");
-        //}
+        OnMove?.Invoke(input);
     }
-
     private void Shoot()
     {
         GameManager.Instance.projectileManager.Fire(transform.position, Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - transform.position, stats.attack, body.linearVelocity);
@@ -70,5 +76,6 @@ public class PlayerController : MonoBehaviour
     private void GameOver()
     {
         //gameover trigger here
+        GameManager.Instance.state = GameManager.GameState.GameOver;
     }
 }

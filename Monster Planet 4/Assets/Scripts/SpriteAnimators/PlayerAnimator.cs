@@ -7,16 +7,17 @@ public class PlayerAnimator
     public PlayerAnimator(Animator animator)
     {
        _animator = animator;
+        GameManager.Instance.playerController.OnMove += AnimateMovement;
     }
 
-    public void Subscribe(PlayerController control)
+    public void Subscribe()
     {
-        control.OnMove += AnimateMovement;
+        GameManager.Instance.playerController.OnMove += AnimateMovement;
     }
 
-    public void Unsubscribe(PlayerController control)
+    public void Unsubscribe()
     {
-        control.OnMove -= AnimateMovement;
+        GameManager.Instance.playerController.OnMove -= AnimateMovement;
     }
 
     private void AnimateMovement(Vector2 move)
