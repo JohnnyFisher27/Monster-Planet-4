@@ -6,17 +6,21 @@ using UnityEngine.SceneManagement;
 public class Enemy : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private int health;
-    public int maxhealth;
+    public int health;
+    public int damage;
+    private Stats stats;
     private NavMeshAgent agent;
-    public GameObject player;
+    private GameObject player;
     void Start()
     {
-        health = maxhealth;
+        //configure stats and behaviour
+        stats = new Stats(this.gameObject, health, damage);
+        stats.OnDeath += Die;
+        player = GameManager.Instance.player;
+        //pathfinding
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-        player = GameManager.Instance.player;
     }
 
 
@@ -24,16 +28,14 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     public virtual void Update()
     {
-        agent.SetDestination(player.transform.position);
+        if (GameManager.Instance.state == GameManager.GameState.Play)
+            agent.SetDestination(player.transform.position);
     }
 
-    public virtual void TakeDamage(GameObject target, int damage) 
+    private void Die()
     {
-        health -= damage;
-        if (health < 0)
-        {
-           Destroy(target);
-        }
+        EventBus.Instance.DoDestroy(this.gameObject);
+        Destroy(this.gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -41,6 +43,7 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject == player)
         {
             SceneManager.LoadScene("Restart");
+            EventBus.Instance.DoDamage(GameManager.Instance.player, stats.attack);
         }
     }
 }
