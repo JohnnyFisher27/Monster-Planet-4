@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 
 public class Enemy : MonoBehaviour
@@ -39,7 +40,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject == player)
         {
-            Destroy(player);
+            SceneManager.LoadScene("Restart");
         }
     }
 }
