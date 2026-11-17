@@ -5,6 +5,7 @@ using System.Collections;
 public class MapController : MonoBehaviour
 {
     public List<GameObject> terrainChunks;
+    public NavMeshManager NavMeshManager;
     public GameObject player;
     public float checkerRadius;
     Vector3 noTerrainPosition;
@@ -109,6 +110,10 @@ public class MapController : MonoBehaviour
     {
         int rand = Random.Range(0, terrainChunks.Count);
         Instantiate(terrainChunks[rand], noTerrainPosition, Quaternion.identity);
+
+        //Hank - Added Code to rebake navmesh surface when world changes
+        NavMeshManager.rebakeMesh();
+
         //latestChunk = Instantiate(terrainChunks[rand], noTerrainPosition, Quaternion.identity);
         //spawnedChunks.Add(latestChunk);
     }

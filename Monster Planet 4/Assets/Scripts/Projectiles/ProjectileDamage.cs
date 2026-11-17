@@ -22,6 +22,7 @@ public class ProjectileDamage : MonoBehaviour //projectile damage, specifically,
     {
         if (collision.gameObject != GameManager.Instance.player)
         {
+            Debug.Log(damage);
             EventBus.Instance.DoDamage(collision.gameObject, damage);
             Destroy(this.gameObject);
         }

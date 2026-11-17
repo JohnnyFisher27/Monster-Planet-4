@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -7,12 +8,13 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         GameObject enemy = Instantiate(enemyPrefab, this.transform.position, Quaternion.identity);
-        enemy.AddComponent<EnemyManager>();
+        //enemy.AddComponent<EnemyManager>();
+        StartCoroutine(spawnInterval());
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator spawnInterval() 
     {
-        
+        yield return new WaitForSeconds(4f);
+        Instantiate(enemyPrefab, this.transform.position, Quaternion.identity);
     }
 }

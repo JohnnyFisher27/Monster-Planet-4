@@ -958,6 +958,7 @@ GameObject:
   - component: {fileID: 4178901061247100672}
   - component: {fileID: 8627311861312176898}
   - component: {fileID: 7363423139938091892}
+  - component: {fileID: 7917424503237564230}
   m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
@@ -5510,6 +5511,22 @@ TilemapRenderer:
   m_SortOrder: 0
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
+--- !u!114 &7917424503237564230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3404842951762023532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &3533148874824232248
 GameObject:
   m_ObjectHideFlags: 0

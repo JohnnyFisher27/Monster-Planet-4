@@ -20,6 +20,7 @@ public class CameraController : MonoBehaviour
     { //https://discussions.unity.com/t/get-mouse-position-on-screen-from-the-center/17717 solution to pouse positioning
         Vector2 mousePosition = Mouse.current.position.ReadValue();
         Vector2 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        _camera.transform.position = Vector2.Lerp(GameManager.Instance.player.transform.position, worldPosition, 0.5f);
+        Vector2 targetPosition = Vector2.Lerp(GameManager.Instance.player.transform.position, worldPosition, 0.5f);
+        _camera.transform.position = new Vector3(targetPosition.x, targetPosition.y, -10f);
     }
 }
