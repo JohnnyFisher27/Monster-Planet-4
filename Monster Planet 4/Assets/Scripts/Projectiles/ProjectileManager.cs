@@ -35,7 +35,7 @@ public class ProjectileManager : MonoBehaviour
 
     private IEnumerator Expire(GameObject obj)
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
         Destroy(obj);
     }
 }

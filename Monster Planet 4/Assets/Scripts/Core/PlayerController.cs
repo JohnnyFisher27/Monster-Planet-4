@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public Action OnMove;
+    public event Action<Vector2> OnMove;
     public Stats stats;
     private GameObject player;
     private Rigidbody2D body;
@@ -15,7 +15,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private InputActionReference moveInput;
     [SerializeField] private InputActionReference mouseInput;
     [SerializeField] private InputActionReference menuInput;
+    //how to animate https://youtu.be/AdQz2wStdLY
+    [SerializeField] private Animator _animator;
 
+    private PlayerAnimator animateMe;
     public Vector2 moveDir;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -31,6 +34,8 @@ public class PlayerController : MonoBehaviour
         body = player.GetComponent<Rigidbody2D>();
         stats = new Stats(player, 100, 10);
         stats.OnDeath += GameOver;
+        animateMe = new PlayerAnimator(_animator);
+        animateMe.Subscribe(this);
     }
 
     // Update is called once per frame
@@ -48,8 +53,8 @@ public class PlayerController : MonoBehaviour
         if (mouseInput.action.triggered)
             Shoot();
 
-        if (input != Vector2.zero)
-            OnMove?.Invoke();
+        //if (input != Vector2.zero)
+            OnMove?.Invoke(input);
 
         //if(menuInput.action.triggered)
         //{
