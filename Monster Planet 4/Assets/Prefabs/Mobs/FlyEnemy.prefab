@@ -80,8 +80,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1557640749
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2631103260818236658, guid: eadff918b34d8264592d05a11ffa3e67, type: 3}
@@ -108,7 +108,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   health: 10
   damage: 100
-  player: {fileID: 0}
 --- !u!60 &5096229503872170028
 PolygonCollider2D:
   m_ObjectHideFlags: 0

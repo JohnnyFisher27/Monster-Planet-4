@@ -317,7 +317,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400238824}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 443111718}
   - component: {fileID: 443111719}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spot Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,7 +655,7 @@ GameObject:
   - component: {fileID: 850915510}
   - component: {fileID: 850915511}
   - component: {fileID: 850915512}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hands
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1078,7 +1078,7 @@ GameObject:
   - component: {fileID: 1319117668}
   - component: {fileID: 1319117673}
   - component: {fileID: 1319117674}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlayerBody
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1221,8 +1221,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1557640749
+  m_SortingLayer: 1
   m_SortingOrder: 100
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1030219907804930814, guid: d0c16f94b2dde954bacbe3c8333b114f, type: 3}
@@ -1634,6 +1634,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7363423139938091892, guid: 7c2735263bd334860a83d977826af83d, type: 3}
+      propertyPath: m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7571314582098270903, guid: 7c2735263bd334860a83d977826af83d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1681,6 +1685,22 @@ PrefabInstance:
     - target: {fileID: 8271932934624796515, guid: 7c2735263bd334860a83d977826af83d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 8627311861312176898, guid: 7c2735263bd334860a83d977826af83d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.3490566
+      objectReference: {fileID: 0}
+    - target: {fileID: 8627311861312176898, guid: 7c2735263bd334860a83d977826af83d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.3490566
+      objectReference: {fileID: 0}
+    - target: {fileID: 8627311861312176898, guid: 7c2735263bd334860a83d977826af83d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.3490566
+      objectReference: {fileID: 0}
+    - target: {fileID: 9110063621664209777, guid: 7c2735263bd334860a83d977826af83d, type: 3}
+      propertyPath: m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9152301832209428197, guid: 7c2735263bd334860a83d977826af83d, type: 3}
       propertyPath: m_Name
