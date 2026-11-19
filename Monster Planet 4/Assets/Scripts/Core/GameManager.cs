@@ -14,8 +14,10 @@ public class GameManager
     public PlayerController playerController;
     public ProjectileManager projectileManager;
     public CameraController CameraController;
+    public MapController MapController;
     private static GameManager theInstance;
 
+    public int chunksLoaded;
     public static GameManager Instance { get
         {
             if (theInstance == null)
