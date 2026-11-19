@@ -24,6 +24,7 @@ public class MapController : MonoBehaviour
     void Start()
     {
         pm = player.GetComponent<PlayerController>();
+        GameManager.Instance.MapController = this;
     }
 
     // Update is called once per frame

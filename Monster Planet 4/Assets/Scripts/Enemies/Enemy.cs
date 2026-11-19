@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
@@ -11,12 +12,20 @@ public class Enemy : MonoBehaviour
     private Stats stats;
     private NavMeshAgent agent;
     private GameObject player;
+    private float distance;
+    private bool pouncing;
+    [SerializeField] private bool isMantis;
+    [SerializeField] private float strafeDistance = 3f;
+    [SerializeField] private float strafeInterval = 1f;
+    [SerializeField] private float leapDuration = 0.3f;
+    [SerializeField] private float leapHeight = 2f;
     void Start()
     {
         //configure stats and behaviour
         stats = new Stats(this.gameObject, health, damage);
         stats.OnDeath += Die;
         player = GameManager.Instance.player;
+        pouncing = false;
         //pathfinding
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
@@ -29,7 +38,17 @@ public class Enemy : MonoBehaviour
     public virtual void Update()
     {
         if (GameManager.Instance.state == GameManager.GameState.Play)
+            distance = Vector3.Distance(transform.position, player.transform.position);
+        if (distance <= 5 && isMantis && !pouncing)
+        {
+            agent.isStopped = true;
+            pouncing = true;
+            StartCoroutine(Leap());
+        }
+        else if (distance > 5 || !isMantis)
+        {
             agent.SetDestination(player.transform.position);
+        }
     }
 
     private void Die()
@@ -45,5 +64,29 @@ public class Enemy : MonoBehaviour
             SceneManager.LoadScene("Restart");
             EventBus.Instance.DoDamage(GameManager.Instance.player, stats.attack);
         }
+    }
+
+    private IEnumerator Leap()
+    {
+        Vector3 start = transform.position;
+        Vector3 end = player.transform.position;
+
+        float elapsed = 0f;
+
+        while (elapsed < leapDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / leapDuration);
+            float progress = 1f - Mathf.Pow(1f - t, 2f);
+            Vector3 position = Vector3.Lerp(start, end, progress);
+            position.y += 4f * leapHeight * t * (1f - t);
+            transform.position = position;
+            yield return null;
+        }
+
+        transform.position = end;
+        yield return new WaitForSeconds(2f);
+        agent.isStopped = false;
+        pouncing = false;
     }
 }
