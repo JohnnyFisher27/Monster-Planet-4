@@ -69,6 +69,7 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator Leap()
     {
+        yield return new WaitForSeconds(0.5f);
         Vector3 start = transform.position;
         Vector3 end = player.transform.position;
 
@@ -86,7 +87,7 @@ public class Enemy : MonoBehaviour
         }
 
         transform.position = end;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.25f);
         agent.isStopped = false;
         pouncing = false;
     }
