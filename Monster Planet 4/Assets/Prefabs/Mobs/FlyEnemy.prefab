@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2736563967228003938}
   - component: {fileID: 5096229503872170028}
   - component: {fileID: 7815733365494491820}
+  - component: {fileID: 5465630851365985957}
   m_Layer: 0
   m_Name: FlyEnemy
   m_TagString: Untagged
@@ -108,6 +109,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   health: 10
   damage: 100
+  isMantis: 0
+  strafeDistance: 3
+  strafeInterval: 1
+  leapDuration: 0.3
+  leapHeight: 2
+  animator: {fileID: 5465630851365985957}
 --- !u!60 &5096229503872170028
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -180,3 +187,25 @@ NavMeshAgent:
   m_BaseOffset: 0.09
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &5465630851365985957
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8186760501312135206}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f5c9041f3e28948d38652e17eb7edacf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

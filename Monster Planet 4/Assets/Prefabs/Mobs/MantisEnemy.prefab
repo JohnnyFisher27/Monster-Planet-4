@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5332218296288309724}
   - component: {fileID: 2796280227561797003}
   - component: {fileID: -2618648572288933868}
+  - component: {fileID: 4760150693840943053}
   m_Layer: 0
   m_Name: MantisEnemy
   m_TagString: Untagged
@@ -149,6 +150,7 @@ MonoBehaviour:
   strafeInterval: 1
   leapDuration: 0.3
   leapHeight: 2
+  animator: {fileID: 4760150693840943053}
 --- !u!195 &-2618648572288933868
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -171,3 +173,25 @@ NavMeshAgent:
   m_BaseOffset: 0.13499999
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &4760150693840943053
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777373488487996291}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
