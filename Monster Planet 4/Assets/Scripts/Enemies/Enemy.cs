@@ -19,6 +19,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float strafeInterval = 1f;
     [SerializeField] private float leapDuration = 0.3f;
     [SerializeField] private float leapHeight = 2f;
+    [SerializeField] private Animator animator;
     void Start()
     {
         //configure stats and behaviour
@@ -33,13 +34,12 @@ public class Enemy : MonoBehaviour
         agent.speed = 4.5f;
     }
 
-
-
     // Update is called once per frame
     public virtual void Update()
     {
         if (GameManager.Instance.state == GameManager.GameState.Play)
             distance = Vector3.Distance(transform.position, player.transform.position);
+
         if (distance <= 5 && isMantis && !pouncing)
         {
             agent.isStopped = true;
@@ -49,7 +49,47 @@ public class Enemy : MonoBehaviour
         else if (distance > 5 || !isMantis)
         {
             agent.SetDestination(player.transform.position);
+            
         }
+
+        Vector3 direction = (player.transform.position - transform.position).normalized;
+        
+        if (direction.x < 0 && direction.x < direction.y)
+        {
+           animator.SetBool("isTurnedLeft", true);
+        }
+        else
+        {
+           animator.SetBool("isTurnedLeft", false);
+        }
+
+        if (direction.x > 0 && direction.x > direction.y)
+        {
+            animator.SetBool("isTurnedRight", true);
+        }
+        else
+        {
+            animator.SetBool("isTurnedRight", false);
+        }
+
+        if (direction.y < 0)
+        {
+            animator.SetBool("isTurnedDown", true);
+        }
+        else
+        {
+            animator.SetBool("isTurnedDown", false);
+        }
+
+        if (direction.y > 0)
+        {
+            animator.SetBool("isTurnedUp", true);
+        }
+        else
+        {
+            animator.SetBool("isTurnedUp", false);
+        }
+        
     }
 
     private void Die()
@@ -86,6 +126,7 @@ public class Enemy : MonoBehaviour
             yield return null;
         }
 
+        animator.SetTrigger("isLeaping");
         transform.position = end;
         yield return new WaitForSeconds(1.25f);
         agent.isStopped = false;
