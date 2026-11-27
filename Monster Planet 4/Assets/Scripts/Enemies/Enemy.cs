@@ -44,7 +44,7 @@ public class Enemy : MonoBehaviour
         {
             agent.isStopped = true;
             pouncing = true;
-            //StartCoroutine(Leap());
+            StartCoroutine(Leap());
         }
         else if (distance > 5 || !isMantis)
         {
@@ -125,6 +125,7 @@ public class Enemy : MonoBehaviour
             yield return null;
         }
 
+        animator.SetTrigger("isLeaping");
         transform.position = end;
         yield return new WaitForSeconds(1.25f);
         agent.isStopped = false;
