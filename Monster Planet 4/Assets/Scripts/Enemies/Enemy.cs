@@ -53,16 +53,8 @@ public class Enemy : MonoBehaviour
         }
 
         Vector3 direction = (player.transform.position - transform.position).normalized;
-        if (direction.y < 0)
-        {
-            animator.SetBool("isTurnedDown", true);
-        }
-        else
-        {
-            animator.SetBool("isTurnedDown", false);
-        }
         
-        if (direction.x < 0)
+        if (direction.x < 0 && direction.x < direction.y)
         {
            animator.SetBool("isTurnedLeft", true);
         }
@@ -71,13 +63,22 @@ public class Enemy : MonoBehaviour
            animator.SetBool("isTurnedLeft", false);
         }
 
-        if (direction.x > 0)
+        if (direction.x > 0 && direction.x > direction.y)
         {
             animator.SetBool("isTurnedRight", true);
         }
         else
         {
             animator.SetBool("isTurnedRight", false);
+        }
+
+        if (direction.y < 0)
+        {
+            animator.SetBool("isTurnedDown", true);
+        }
+        else
+        {
+            animator.SetBool("isTurnedDown", false);
         }
 
         if (direction.y > 0)
